@@ -27,7 +27,7 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("tronicElextron").style.color="gray";
-    document.getElementById("tronicElextron").innerHTML = "Deadline : 11:59 PM 31/05/2022";
+    document.getElementById("tronicElextron").innerHTML = "Deadline : 12:59 PM 31/05/2022";
     document.getElementById("elextronButton").classList.remove('disabled');
   }
 
