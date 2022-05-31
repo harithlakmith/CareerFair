@@ -2,6 +2,7 @@
 // Set the date we're counting down to
 var countDownDate = new Date("May 27, 2022 21:00:00").getTime();
 
+
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -29,7 +30,9 @@ var x = setInterval(function() {
     document.getElementById("tronicElextron").innerHTML = "Deadline : 11:59 PM 31/05/2022";
     document.getElementById("elextronButton").classList.remove('disabled');
   }
+
 }, 1000);
+
 
 
 
