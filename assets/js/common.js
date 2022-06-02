@@ -1,6 +1,6 @@
 
 // Set the date we're counting down to
-var countDownDate = new Date("May 27, 2022 21:00:00").getTime();
+/*var countDownDate = new Date("May 27, 2022 21:00:00").getTime();
 
 
 // Update the count down every 1 second
@@ -31,8 +31,32 @@ var x = setInterval(function() {
     document.getElementById("elextronButton").classList.remove('disabled');
   }
 
+}, 1000);*/
+
+
+// Set the date we're counting down to
+var countDownDate1 = new Date("Jun 02, 2022 23:59:59").getTime();
+
+
+// Update the count down every 1 second
+var y = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var dist = countDownDate1 - now;
+
+    
+  // If the count down is over, write some text 
+  if (dist < 0) {
+    clearInterval(y);
+    
+    document.getElementById("dead1").classList.add('disabled');
+    document.getElementById("dead2").classList.add('disabled');
+    document.getElementById("dead3").classList.add('disabled');
+  }
+
 }, 1000);
-
-
 
 
