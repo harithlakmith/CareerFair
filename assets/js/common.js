@@ -36,6 +36,7 @@ var x = setInterval(function() {
 
 // Set the date we're counting down to
 var countDownDate1 = new Date("Jun 07, 2022 08:00:00").getTime();
+var countDownDate2 = new Date("Jun 07, 2022 23:59:59").getTime();
 
 
 // Update the count down every 1 second
@@ -46,6 +47,7 @@ var y = setInterval(function() {
     
   // Find the distance between now and the count down date
   var dist = countDownDate1 - now;
+  var dist2 = countDownDate2 - now;
 
     
   // If the count down is over, write some text 
@@ -55,6 +57,13 @@ var y = setInterval(function() {
     document.getElementById("dead1").classList.add('disabled');
     document.getElementById("dead2").classList.add('disabled');
     document.getElementById("dead3").classList.add('disabled');
+  }
+
+  if (dist2 < 0) {
+    clearInterval(y);
+    
+    document.getElementById("dead4").classList.add('disabled');
+    
   }
 
 }, 1000);
